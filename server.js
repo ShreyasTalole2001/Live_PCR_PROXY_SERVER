@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
-// app.get('/', (req, res) => {
-//     res.send("jhdkjfh")
-// })
+app.get('/', (req, res) => {
+    res.send("Testing")
+})
 
 
 app.get('/getPcrData', async (req, res) => {
