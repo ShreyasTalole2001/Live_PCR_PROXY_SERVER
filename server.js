@@ -23,7 +23,7 @@ app.get('/getPcrData', async (req, res) => {
     const url = "https://www.nseindia.com/api/option-chain-indices?symbol=NIFTY"
 
     try {
-        const response = await axios.get(url);
+        const response = await axios.get(url, {timeout: 5000});
         console.log(response.status);
         console.log(response.data);
 
