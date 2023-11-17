@@ -1,4 +1,8 @@
 GET http://localhost:3000/getPcrData HTTP/1.1
 
+
 ###
-GET https://live-pcr-procy-server.onrender.com/getPcrData HTTP/1.1
+GET http://localhost:3000/getLogData HTTP/1.1
+
+###
+GET http://localhost:3000/removeLogData/SHR HTTP/1.1
